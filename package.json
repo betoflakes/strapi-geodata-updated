@@ -2,6 +2,10 @@
   "version": "0.0.2",
   "keywords": [],
   "type": "commonjs",
+  "main": "./dist/server/index.js",
+  "module": "./dist/server/index.mjs",
+  "types": "./dist/server/src/index.d.ts",
+  "browser": "./dist/admin/index.js",
   "exports": {
     "./package.json": "./package.json",
     "./strapi-admin": {
@@ -72,11 +76,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/wisnuwiry/strapi-geodata.git"
+    "url": "git+https://github.com/betoflakes/strapi-geodata.git"
   },
   "bugs": {
-    "url": "https://github.com/wisnuwiry/strapi-geodata/issues"
+    "url": "https://github.com/betoflakes/strapi-geodata/issues"
   },
-  "homepage": "https://github.com/wisnuwiry/strapi-geodata#readme",
+  "homepage": "https://github.com/betoflakes/strapi-geodata#readme",
   "author": "Wisnu G. Saputra <wisnuwiry@gmail.com>"
 }
