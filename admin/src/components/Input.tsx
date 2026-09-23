@@ -40,7 +40,6 @@ const mapProps = {
   center: [41.9, 12.5] as LatLngTuple,
   tileUrl: `https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png`,
   tileAttribution: 'OSM attribution',
-  tileAccessToken: '',
 };
 
 const Input: React.FC<InputProps> = ({ hint, labelAction, label, name, required, ...props }) => {
@@ -127,7 +126,6 @@ const Input: React.FC<InputProps> = ({ hint, labelAction, label, name, required,
               <TileLayer
                 attribution={mapProps.tileAttribution}
                 url={mapProps.tileUrl}
-                accessToken={mapProps.tileAccessToken}
               />
               {location && <Marker position={[location?.lat, location?.lng]} icon={customIcon} />}
             </MapContainer>
