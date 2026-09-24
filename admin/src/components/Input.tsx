@@ -39,7 +39,7 @@ const mapProps = {
   zoom: 15,
   center: [41.9, 12.5] as LatLngTuple,
   tileUrl: `https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png`,
-  tileAttribution: 'OSM attribution',
+  tileAttribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
 };
 
 const Input: React.FC<InputProps> = ({ hint, labelAction, label, name, required, ...props }) => {
