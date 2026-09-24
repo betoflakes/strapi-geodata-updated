@@ -38,7 +38,8 @@ interface InputProps {
 const mapProps = {
   zoom: 15,
   center: [41.9, 12.5] as LatLngTuple,
-  tileUrl: 'https://tiles.openfreemap.org/styles/liberty/{z}/{x}/{y}.png',
+  // tileUrl: `https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png`,
+  tileUrl: `https://basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png?key=${process.env.STRAPI_ADMIN_MAP_TOKEN}`,
   tileAttribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
 };
 
